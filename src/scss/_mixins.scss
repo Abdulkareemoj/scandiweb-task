@@ -1,0 +1,28 @@
+//divisions
+@media (min-width: 64em) {
+}
+
+//640px, 1024px viewport
+$divisions-up: (
+	"medium": "40em",
+	"large": "64em",
+	"xlarge": "87.5em"
+);
+
+$divisions-down: (
+	"small": "39.375em",
+	"medium": "63.975em",
+	"large": "87.4375em"
+);
+
+@mixin divisions-up($size) {
+	@media (min-width: map-get($divisions-up, $size)) {
+		@content;
+	}
+}
+
+@mixin divisions-down($size) {
+	@media (max-width: map-get($divisions-down, $size)) {
+		@content;
+	}
+}

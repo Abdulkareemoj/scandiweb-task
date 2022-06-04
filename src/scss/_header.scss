@@ -1,0 +1,37 @@
+.header {
+	position: relative;
+	z-index: 1;
+
+	nav {
+		position: relative;
+	}
+
+	&links {
+		a {
+			position: relative;
+			transition: color 250ms ease-in-out;
+			margin-left: 20px;
+			color: #000;
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				height: 5px;
+				left: 0;
+				right: 0;
+				bottom: -30px;
+				background: #53da7c;
+				opacity: 0;
+				transition: opacity 250ms ease-in-out;
+			}
+
+			&:hover {
+				color: #53da7c;
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
