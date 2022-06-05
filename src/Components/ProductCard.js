@@ -2,8 +2,8 @@ import React from "react";
 import Productlist from './Productlist.js'
 class ProductCard extends React.Component {
 		
-		const Productlist = (props) => {
-			const { productId, productImage, productName, ProductCard, Productlist } = props;
+		const ProductCard = (props) => {
+			const { productId, productImage, productName} = props;
 
 			return (
 			<div class="products-container">
