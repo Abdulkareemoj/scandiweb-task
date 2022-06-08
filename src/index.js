@@ -6,7 +6,7 @@ import {
   ApolloProvider,
   ApolloClient,
   createHttpLink,
-  InMemoryCache
+  InMemoryCache, gql
 } from '@apollo/client';
 
 
@@ -19,6 +19,16 @@ const client = new ApolloClient({
   link: httpLink,
   cache: new InMemoryCache()
 });
+
+const EXCHANGE_RATES = gql`
+{
+    data {
+      productName
+      productImage
+    }
+  }
+`;
+client.query({ query:  EXCHANGE_RATES }).then(console.log)
 
 ReactDOM.render(
   <ApolloProvider client={client}>

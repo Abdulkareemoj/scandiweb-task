@@ -1,20 +1,22 @@
 import React from "react";
-import Productlist from './Productlist.js'
+
+
+
+
 class ProductCard extends React.Component {
 		
-		const ProductCard = (props) => {
-			const { productId, productImage, productName} = props;
-
+render(){
+	const {productImage, productName} =  this.props
 			return (
-			<div class="products-container">
-				<div class="product-card">
-					<div class="product-image">
-					(productImage={item.productImage})
+			<div className="products-container">
+				<div className="product-card">
+					<div className="product-image">
+					{productImage}
 					</div>					
-						<p class="product-name">
-						(productName={item.productName})
+						<p className="product-name">
+						{productName}
 						</p>
-						<a class="product-price" href="#">
+						<a className="product-price" href="#">
 							<strong>Price</strong>
 						</a>				
 				</div>
@@ -22,6 +24,6 @@ class ProductCard extends React.Component {
 		);
 	};
 	
-
+};
 
 export default ProductCard;
