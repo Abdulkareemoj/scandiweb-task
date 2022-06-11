@@ -18,21 +18,21 @@
 		"productId": "3"
 	},
 	{
-		'productImage': "link4",
-		'productName': "dress4",
-		price: "val4",
-		"productId": "4",
+		"productImage": "link4",
+		"productName": "dress4",
+		"price": "val4",
+		"productId": "4"
 	},
 	{
-		'productImage': "link5",
-		'productName': "dress5",
+		"productImage": "link5",
+		"productName": "dress5",
 		"price": "val5",
 		"productId": "5"
 	},
 	{
-		'productImage': "link6",
-		'productName': "dress6",
+		"productImage": "link6",
+		"productName": "dress6",
 		"price": "val6",
 		"productId": "6"
-	},
-];
+	}
+]

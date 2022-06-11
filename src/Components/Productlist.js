@@ -1,5 +1,5 @@
 import React from "react";
-import {data} from '../data.js'
+import data from '../data.json'
 import ProductCard from './ProductCard.js'
 
 class Productlist extends React.Component {

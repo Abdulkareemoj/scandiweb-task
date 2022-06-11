@@ -12,7 +12,7 @@ class Navbar extends React.Component {
 						<a href="#">WOMEN</a>
 						<a href="#">MEN</a>
 						<a href="#">KIDS</a>
-						<a classN="headerlogo" href="#"></a>
+						<a className="headerlogo" href="#"></a>
 					</div>
 					<div className="box">
 						<img src={logo} alt="shoplogo" srcset="" />
