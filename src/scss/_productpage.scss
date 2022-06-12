@@ -1,0 +1,36 @@
+.page-container{
+    display: flex;
+}
+
+.product-thumbnail{
+    height: 80px;
+    width: 79px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    
+}
+.product-card{
+    cursor: pointer;
+    height: 559.592041015625px;
+    width: 1364.0277099609375px;
+    left: -25.41650390625px;
+    top: -48.59228515625px;
+    border-radius: 0px;
+    
+ padding: 16px;;
+   }
+  
+   .product-image{
+   
+   }
+   
+   .product-name{
+     font-weight: 500;
+   }
+   .product-price{
+     font-weight: 800;
+     margin-top: 6px;
+     color: black;
+   }
+   
