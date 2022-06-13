@@ -3,7 +3,7 @@ import React from "react";
 import data from '../data.json'
 class Productpage extends React.Component {
 	render() {
-		const {mainimage,img1,img2,img3,pname,price, productName} =  this.props
+		const {mainimage,img1,img2,img3,price, productName} =  this.props
 		return (
 			<div className="page-container">
 			
@@ -18,12 +18,10 @@ class Productpage extends React.Component {
 				
 				</div> 
 			   <div className="product-details">
-			   <p className="product-name">{pname}</p>
+			   <p className="product-name">{productName}</p>
 					<p className="product-price"> {price}</p>
-			   </div>
-			</div>
-		  );
-		};
+			   </div> </div>
+		)};
 		
 	} 
 export default Productpage;
