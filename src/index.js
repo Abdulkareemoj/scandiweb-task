@@ -10,8 +10,7 @@ import {
 } from '@apollo/client';
 import {
   BrowserRouter,
-  Routes,
-  Route,
+
 } from "react-router-dom";
 
 
