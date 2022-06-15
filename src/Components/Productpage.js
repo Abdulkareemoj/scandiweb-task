@@ -1,9 +1,10 @@
 import React from "react";
 
-import data from '../data.json'
+import data from '../data.json';
+
 class Productpage extends React.Component {
 	render() {
-		const {mainimage,img1,img2,img3,price, productName} =  this.props
+		const {productImage,img1,img2,img3,price, productName} =  this.props
 		return (
 			<div className="page-container">
 			
@@ -14,7 +15,7 @@ class Productpage extends React.Component {
 			</div>
 			
 			<div className="product-card">
-					<img src= {mainimage} className="product-image" />
+					<img src= {productImage} className="product-image" />
 				
 				</div> 
 			   <div className="product-details">
