@@ -1,0 +1,42 @@
+.page-container{
+    display: flex;
+ padding-top: 5rem; 
+ align-items: center;
+
+}
+
+.product-thumbnail{
+  flex-direction: column;
+  height: 4.9375rem;
+  width: 5rem;
+    border-radius: 0px;
+    display: flex;
+ 
+    
+}
+.product-image{
+    cursor: pointer;
+    height: 31.975rem;
+    width: 38.125rem;
+    border-radius: 0px;
+}
+  
+   
+   .product-name{
+     font-weight: 500;
+   }
+   .product-price{
+     font-weight: 800;
+     margin-top: 6px;
+     color: black;
+   }
+ 
+ 
+   .product-details{
+    position: absolute;
+width: 292px;
+height: 595px;
+left: 929px;
+top: 160px;
+
+   }

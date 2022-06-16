@@ -12,7 +12,7 @@ class Navbar extends React.Component {
 						<a href="#">WOMEN</a>
 						<a href="#">MEN</a>
 						<a href="#">KIDS</a>
-						<a class="headerlogo" href="#"></a>
+						<a className="headerlogo" href="#"></a>
 					</div>
 					<div className="box">
 						<img src={logo} alt="shoplogo" srcset="" />
@@ -22,7 +22,7 @@ class Navbar extends React.Component {
 						<DropDown />
 					</div>
 					<div>
-					<img src={cart} alt="shopcart" srcset="" />
+					<img src={cart} alt="shopcart"  />
 					</div></div>
 				</nav>
 			</header>

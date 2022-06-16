@@ -1,23 +1,24 @@
+import { Routes, Route } from 'react-router-dom';
 import "./Styles.scss";
 import React from "react";
 import Productlist from "./Components/Productlist";
 import Navbar from "./Components/Navbar";
-// import { ApolloProvider,ApolloClient, Cache, InMemoryCache } from "@apollo/client";
-// import Producttile from "./Components/Producttile";
-// import Cart from "./Components/Cart";
-// import Productpage from "./Components/Productpage";
+import Productpage from "./Components/Productpage";
+// import data from "./data.json"
+// import ExchangeRates from ".";
 
-// const client = new ApolloClient({
-// 	uri: 'http://localhost:4000/',
-// 	cache: new InMemoryCache();
-// })
+
+
 export default function App() {
-	return  (
-		<div className="container">
-			<Navbar />
-			<Productlist />
-			{/* <Cart />
-			<Productpage /> */}
-		</div>
-	);
+    return  (
+        <>
+        <Navbar /> 
+        <Routes>
+            <Route path='/' element={<Productlist />}/>
+           
+                <Route path='/ppg' element={<Productpage productImage={'link1'} img1={'link1'} img2={ 'link2'} img3={'link3'}price={'link5'} productName={'6'} />}/>
+           
+        </Routes>
+        </>
+    );
 }
