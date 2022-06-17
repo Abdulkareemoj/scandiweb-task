@@ -43,7 +43,7 @@ class Productpage extends React.Component {
 
 <h2>PRICE</h2>
 					<p className="product-price">{price}</p>
-					<input type="radio" value="ADD TO CART" name="ADD" /> ADD TO CART
+					<input type="button" value="ADD TO CART" name="ADD" /> ADD TO CART
 								   </div> </div>
 		)};
 		
