@@ -188,4 +188,22 @@ color: #1D1F22;
     user-select: none;
 }
 
- 
+ .product-desc{
+   position: absolute;
+width: 292px;
+height: 103px;
+left: calc(50% - 292px/2 + 355px);
+bottom: 178px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 159.96%;
+/* or 26px */
+
+
+/* --c-text */
+
+color: #1D1F22;
+ }
