@@ -30,7 +30,7 @@ const DATA = [
 
 class Productpage extends React.Component {
 	render() {
-		const { productImage, img1, img2, img3, price, productName,productItem } = this.props;
+		const { productImage, img1, img2, img3, price, productName,productItem,productDesc } = this.props;
 		return (
 			<div className="page-container  container containerpall">
 				<div className="product-thumbnail">
@@ -109,6 +109,7 @@ class Productpage extends React.Component {
 					<h2 className="price-choice">PRICE</h2>
 					<p className="product-price">{price}</p>
 					<input className="cta-utto" type="button" value="ADD TO CART" name="ADD" /> </div>{" "}
+			<p className="product-desc">{productDesc}</p>
 			</div>
 		);
 	}
