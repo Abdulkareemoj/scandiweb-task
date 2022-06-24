@@ -21,112 +21,109 @@
     border-radius: 0px;
 }
   
-   
-   .product-name{
-    
-position: absolute;
-width: 292px;
-height: 27px;
-left: 929px;
-top: 160px;
+.product-details{
+   padding-left: 100px;
+   display:flex;
+   flex-direction: column;
 
+}
+.product-name{
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 600;
 font-size: 30px;
 line-height: 27px;
- 
-display: flex;
-align-items: center;
-
-color: #1D1F22;
-
-   }
-   .product-price{
- 
-position: absolute;
-width: 86px;
-height: 46px;
-left: 929px;
-top: 494px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 18px;
-/* or 75% */
 
 display: flex;
 align-items: center;
 
 color: #1D1F22;
 
+}
+.product-item{
 
-   }
- 
- 
-   .product-name{
-       
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 27px;
-    display: flex;
-align-items: center;
-   
-    color: #1D1F22;
-
-   }
-
-   .product-item{
-   
-position: absolute;
-width: 292px;
-height: 27px;
-left: 929px;
-top: 203px;
-
-font-family: 'Raleway';
+   font-family: 'Raleway';
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
 line-height: 27px;
- 
+/* identical to box height, or 90% */
 
 display: flex;
 align-items: center;
 
 color: #1D1F22;
-   }
 
-   .size-choice{
-    position: absolute;
-    width: 38px;
-    height: 18px;
-    left: 929px;
-    top: 273px;
-    
+}
+
+.size-choice{
     font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-    /* identical to box height, or 100% */
-    
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    color: #1D1F22;
-   }
-   .color-choice{
-    position: absolute;
-width: 55px;
-height: 18px;
-left: 929px;
-top: 368px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 18px;
+   /* identical to box height, or 100% */
+   
+   display: flex;
+   align-items: center;
+   text-align: center;
+   
+   color: #1D1F22;
+   
+}
+.sizebutton-style{
+flex-direction: row;
+}
+.colorbutton-style{
+   flex-direction: row;
+}
+// .xs{
+   
+// box-sizing: border-box;
+
+// position: absolute;
+// width: 63px;
+// height: 45px;
+// left: 929px;
+// top: 299px;
+
+// border: 1px solid #1D1F22;
+// }
+// .s{
+//    box-sizing: border-box;
+
+// position: absolute;
+// width: 63px;
+// height: 45px;
+// left: 1004px;
+// top: 299px;
+// border: 1px solid #1D1F
+// }
+// .m{
+//    box-sizing: border-box;
+
+// position: absolute;
+// width: 63px;
+// height: 45px;
+// left: 1079px;
+// top: 299px;
+
+// border: 1px solid #1D1F22;
+// }
+// .l{
+// box-sizing: border-box;
+
+// position: absolute;
+// width: 63px;
+// height: 45px;
+// left: 1154px;
+// top: 299px;
+
+// border: 1px solid #1D1F22;
+// }
+
+
+.color-choice{
 
 font-family: 'Roboto Condensed';
 font-style: normal;
@@ -140,60 +137,72 @@ align-items: center;
 text-align: center;
 
 color: #1D1F22;
-
-   }
-   .price-choice{
-    
-    position: absolute;
-    width: 50px;
-    height: 18px;
-    left: 929px;
-    top: 466px;
-    
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-    /* identical to box height, or 100% */
-    
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    color: #1D1F22;
-    
-   }
-   .cta-button{
-    padding: 16px 32px;
-
-    position: absolute;
-    width: 292px;
-    height: 52px;
-    left: 929px;
-    top: 560px;
-    
-    background: #5ECE7B;
-   }
-   
- 
-   .size-style{
-    
- 
- 
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-     
-    user-select: none;
 }
 
- .product-desc{
-   position: absolute;
-width: 292px;
-height: 103px;
-left: calc(50% - 292px/2 + 355px);
-bottom: 178px;
+// .cs1{
+   
+// position: absolute;
+// width: 32px;
+// height: 32px;
+// left: 2px;
+// top: 2px;
+
+// //background: #D3D2D5;
+// }
+
+// .cs2{position: absolute;
+//    width: 32px;
+//    height: 32px;
+//    left: 44px;
+//    top: 2px;
+// }
+// .cs3{
+//    position: absolute;
+//    width: 32px;
+//    height: 32px;
+//    left: 84px;
+//    top: 2px;
+// }
+.cta-button{
+   display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px 32px;
+
+background: #5ECE7B;
+}
+
+.price-choice{
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height, or 100% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #1D1F22;
+
+}
+
+.product-price{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 18px;
+/* or 75% */
+
+display: flex;
+align-items: center;
+
+color: #1D1F22;
+}
+
+.product-desc{
 
 font-family: 'Roboto';
 font-style: normal;
@@ -206,4 +215,5 @@ line-height: 159.96%;
 /* --c-text */
 
 color: #1D1F22;
- }
+
+}

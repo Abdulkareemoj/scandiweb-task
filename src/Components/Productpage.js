@@ -27,6 +27,7 @@ class Productpage extends React.Component {
 		value: "XS",
 		value2: "color1"
 	};
+
 	onChange= e=> {
 		this.setState({[e.target.name] : e.target.value});
 	}
@@ -65,12 +66,14 @@ render() {
 				</strong>
 				<p className="product-item">{productItem}</p>
 
+
+
 				<h2 className="size-choice">SIZE</h2>
 
-				{/* <div onChange={this.onChangeValue}>  */}
+	<div className="sizebutton-style">
 				<label>XS 
 					<input 
-					className="size-style" 
+					className="xs" 
 					type="radio" 
 					value="XS" 
 					name="value"
@@ -80,7 +83,7 @@ render() {
 					</label>
 				<label>S
 					<input 
-					className="size-style" 
+					className="s" 
 					type="radio" 
 					value="S" 
 					name="value"
@@ -90,7 +93,7 @@ render() {
 					</label>
 				<label>M
 					<input 
-					className="size-style" 
+					className="m" 
 					type="radio" 
 					value="M" 
 					name="value"
@@ -100,7 +103,7 @@ render() {
 				</label>
 				<label>L
 					<input 
-					className="size-style"
+					className="l"
 					type="radio"
 					value="L" 
 					name="value"
@@ -108,12 +111,14 @@ render() {
 					onChange={this.onChange} 
 					/> 
 					</label>
+					</div>
 
 
 				<h2 className="color-choice">COLOR</h2>
-				<label>color1
+				
+				<div className="colorbutton-style"><label>color1
 					<input 
-					className="color-style" 
+					className="cs1 " 
 					type="radio" 
 					value="color1" 
 					name="value2"
@@ -124,7 +129,7 @@ render() {
 
 					<label>color2
 					<input 
-					className="color-style" 
+					className="cs2" 
 					type="radio" 
 					value="color2" 
 					name="value2"
@@ -135,7 +140,7 @@ render() {
 
 					<label>color3
 					<input 
-					className="color-style" 
+					className="cs3" 
 					type="radio" 
 					value="color3" 
 					name="value2"
@@ -143,7 +148,7 @@ render() {
 					onChange={this.onChange} 
 					/>
 					</label>
-
+					</div>
 				<h2 className="price-choice">PRICE</h2>
 				<p className="product-price">{price}</p>
 
