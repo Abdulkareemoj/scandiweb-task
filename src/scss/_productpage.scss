@@ -7,8 +7,8 @@
 
 .product-thumbnail{
   flex-direction: column;
-  height: 4.9375rem;
-  width: 5rem;
+  width: 79px;
+height: 80px;
     border-radius: 0px;
     display: flex;
  
@@ -16,8 +16,8 @@
 }
 .product-image{
     cursor: pointer;
-    height: 31.975rem;
-    width: 38.125rem;
+    width: 610px;
+    height: 511px;
     border-radius: 0px;
 }
   
@@ -73,54 +73,12 @@ color: #1D1F22;
 }
 .sizebutton-style{
 flex-direction: row;
+display: flex;
 }
 .colorbutton-style{
+   display: flex;
    flex-direction: row;
 }
-// .xs{
-   
-// box-sizing: border-box;
-
-// position: absolute;
-// width: 63px;
-// height: 45px;
-// left: 929px;
-// top: 299px;
-
-// border: 1px solid #1D1F22;
-// }
-// .s{
-//    box-sizing: border-box;
-
-// position: absolute;
-// width: 63px;
-// height: 45px;
-// left: 1004px;
-// top: 299px;
-// border: 1px solid #1D1F
-// }
-// .m{
-//    box-sizing: border-box;
-
-// position: absolute;
-// width: 63px;
-// height: 45px;
-// left: 1079px;
-// top: 299px;
-
-// border: 1px solid #1D1F22;
-// }
-// .l{
-// box-sizing: border-box;
-
-// position: absolute;
-// width: 63px;
-// height: 45px;
-// left: 1154px;
-// top: 299px;
-
-// border: 1px solid #1D1F22;
-// }
 
 
 .color-choice{
@@ -138,31 +96,28 @@ text-align: center;
 
 color: #1D1F22;
 }
-
-// .cs1{
-   
-// position: absolute;
-// width: 32px;
-// height: 32px;
-// left: 2px;
-// top: 2px;
-
-// //background: #D3D2D5;
-// }
-
-// .cs2{position: absolute;
-//    width: 32px;
-//    height: 32px;
-//    left: 44px;
-//    top: 2px;
-// }
-// .cs3{
-//    position: absolute;
-//    width: 32px;
-//    height: 32px;
-//    left: 84px;
-//    top: 2px;
-// }
+label{
+   display: block;
+   width: 63px;
+   height: 45px;
+   text-align: center;
+   line-height: 40px;
+   border: 1px solid #1D1F22;
+   margin-right: 7px;
+   border-radius: 3px;
+   cursor: pointer;
+   transition: .3s;
+}
+input{
+   -webkit-appearance: none;
+   appearance: none;
+}
+input:checked + label{
+   border-color: #1D1F22;
+   background: #1D1F22;
+   border: 1px solid #1D1F22;
+   box-sizing: border-box;
+}
 .cta-button{
    display: flex;
 flex-direction: column;
