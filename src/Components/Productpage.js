@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const DATA = [
 	{
@@ -8,7 +8,7 @@ const DATA = [
 	},
 ];
 
-
+//forget this
 // const productSize = ["S", "M", "X", "XXL"];
 //   //map
 //   const sizeData = productSize?.map((item) => ({
@@ -19,24 +19,26 @@ const DATA = [
 //   console.log(sizeValue);
 
 
-//     
+//     was trying with this before
 
+// class Productpage extends React.Component {
+	// state = {
+	// 	sizes: "XS",
+	// 	colors: "color1"
+	// };
 
-class Productpage extends React.Component {
-	state = {
-		value: "XS",
-		value2: "color1"
-	};
-
-	onChange= e=> {
-		this.setState({[e.target.name] : e.target.value});
-	}
+	// onChange= e=> {
+	// 	this.setState({[e.target.name] : e.target.value});
+	// }
 		//     this.onChangeValue = this.onChangeValue.bind(this);
 		//   }
 
-render() {
-	const [colors, setColors] = useState("color 1");
-	const [sizes, setSizes] = useState("small");
+		export default function() {
+			const [colors, setColors] = useState("color 1");
+			const [sizes, setSizes] = useState("small");
+// render() {
+	// const [colors, setColors] = useState("color 1");
+	// const [sizes, setSizes] = useState("small");
   
 	const { productImage, img1, img2, img3, price, productName, productItem, productDesc } = this.props;
 	return (
@@ -134,7 +136,7 @@ render() {
 				<h2 className="color-choice">COLOR</h2>
 				
 				<div className="colorbutton-style">
-				<input
+					<input
           onChange={(e) => setColors(e.target.value)}
           className="hidden_radio"
           type="radio"
@@ -163,7 +165,7 @@ render() {
           color 2
         </label>
       </div>
-    </div>
+    
 				<h2 className="price-choice">PRICE</h2>
 				<p className="product-price">{price}</p>
 
