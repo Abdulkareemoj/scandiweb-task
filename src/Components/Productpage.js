@@ -35,7 +35,9 @@ class Productpage extends React.Component {
 		//   }
 
 render() {
-	const { value, value2 } = this.state;
+	const [colors, setColors] = useState("color 1");
+	const [sizes, setSizes] = useState("small");
+  
 	const { productImage, img1, img2, img3, price, productName, productItem, productDesc } = this.props;
 	return (
 		<div className="page-container  container containerpall">
@@ -71,84 +73,97 @@ render() {
 				<h2 className="size-choice">SIZE</h2>
 
 	<div className="sizebutton-style">
-				<label>XS 
-					<input 
-					className="xs" 
-					type="radio" 
-					value="XS" 
-					name="value"
-					checked={value === "XS"}
-					onChange={this.onChange} 
-					/> 
-					</label>
-				<label>S
-					<input 
-					className="s" 
-					type="radio" 
-					value="S" 
-					name="value"
-					checked={value === "S"}
-					onChange={this.onChange} 
-					/>
-					</label>
-				<label>M
-					<input 
-					className="m" 
-					type="radio" 
-					value="M" 
-					name="value"
-					checked={value === "M"}
-					onChange={this.onChange} 
-					/>
-				</label>
-				<label>L
-					<input 
-					className="l"
-					type="radio"
-					value="L" 
-					name="value"
-					checked={value === "L"}
-					onChange={this.onChange} 
-					/> 
-					</label>
-					</div>
-
+	<input
+          onChange={(e) => setSizes(e.target.value)}
+          className="hidden_radio"
+          type="radio"
+          id="small"
+          name="colors"
+          value="small"
+        />
+        <label
+          className={`${sizes === "small" ? "button-selected" : "button"}`}
+          for="small"
+        >
+          small
+        </label>
+        <input
+          onChange={(e) => setSizes(e.target.value)}
+          className="hidden_radio"
+          type="radio"
+          id="medium"
+          name="colors"
+          value="medium"
+        />
+        <label
+          className={`${sizes === "medium" ? "button-selected" : "button"}`}
+          for="medium"
+        >
+          medium
+        </label>
+        <input
+          onChange={(e) => setSizes(e.target.value)}
+          className="hidden_radio"
+          type="radio"
+          id="large"
+          name="colors"
+          value="large"
+        />
+        <label
+          className={`${sizes === "large" ? "button-selected" : "button"}`}
+          for="large"
+        >
+          large
+        </label>
+        <input
+          onChange={(e) => setSizes(e.target.value)}
+          className="hidden_radio"
+          type="radio"
+          id="xlarge"
+          name="colors"
+          value="xlarge"
+        />
+        <label
+          className={`${sizes === "xlarge" ? "button-selected" : "button"}`}
+          for="xlarge"
+        >
+          xlarge
+        </label>
+      </div>
 
 				<h2 className="color-choice">COLOR</h2>
 				
-				<div className="colorbutton-style"><label>color1
-					<input 
-					className="cs1 " 
-					type="radio" 
-					value="color1" 
-					name="value2"
-					checked={value2 === "color1"}
-					onChange={this.onChange} 
-					/>
-					</label>
-
-					<label>color2
-					<input 
-					className="cs2" 
-					type="radio" 
-					value="color2" 
-					name="value2"
-					checked={value2 === "color2"}
-					onChange={this.onChange} 
-					/>
-					</label>
-
-					<label>color3
-					<input 
-					className="cs3" 
-					type="radio" 
-					value="color3" 
-					name="value2"
-					checked={value2 === "color3"}
-					onChange={this.onChange} 
-					/>
-					</label>
-					</div>
+				<div className="colorbutton-style">
+				<input
+          onChange={(e) => setColors(e.target.value)}
+          className="hidden_radio"
+          type="radio"
+          id="color1"
+          name="colors"
+          value="color 1"
+        />
+        <label
+          className={`${colors === "color 1" ? "button-selected" : "button"}`}
+          for="color1"
+        >
+          color 1
+        </label>
+        <input
+          onChange={(e) => setColors(e.target.value)}
+          className="hidden_radio"
+          type="radio"
+          id="color2"
+          name="colors"
+          value="color 2"
+        />
+        <label
+          className={`${colors === "color 2" ? "button-selected" : "button"}`}
+          for="color2"
+        >
+          color 2
+        </label>
+      </div>
+    </div>
 				<h2 className="price-choice">PRICE</h2>
 				<p className="product-price">{price}</p>
 

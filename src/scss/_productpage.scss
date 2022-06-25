@@ -96,29 +96,31 @@ align-items: center;
 text-align: center;
 
 color: #1D1F22;
-}
-label{
-   display: block;
-   width: 63px;
-   height: 45px;
-   text-align: center;
-   line-height: 40px;
-   border: 1px solid #1D1F22;
-   margin-right: 7px;
-   border-radius: 3px;
-   cursor: pointer;
-   transition: .3s;
-}
-input{
-   -webkit-appearance: none;
-   appearance: none;
-}
-input:checked + label{
-   border-color: #1D1F22;
-   background: #1D1F22;
-   border: 1px solid #1D1F22;
-   box-sizing: border-box;
-}
+ }
+
+.hidden_radio {
+   display: none;
+ }
+ 
+ .down {
+   margin-bottom: 1.5rem;
+ }
+ 
+ .button {
+   padding: 0.5rem 1rem;
+   color: black;
+   margin-right: 0.5rem;
+   border: 2px solid violet;
+ }
+ .button-selected {
+   padding: 0.5rem 1rem;
+   color: white;
+   background-color: violet;
+   border: 2px solid violet;
+   margin-right: 0.5rem;
+ }
+ 
+
 .cta-button{
    display: flex;
 flex-direction: column;
