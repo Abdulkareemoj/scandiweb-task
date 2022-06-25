@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const DATA = [
 	{
@@ -8,7 +8,7 @@ const DATA = [
 	},
 ];
 
-
+//forget this
 // const productSize = ["S", "M", "X", "XXL"];
 //   //map
 //   const sizeData = productSize?.map((item) => ({
@@ -19,24 +19,37 @@ const DATA = [
 //   console.log(sizeValue);
 
 
-//     
+//     was trying with this before
 
+// class Productpage extends React.Component {
+	// state = {
+	// 	sizes: "XS",
+	// 	colors: "color1"
+	// };
 
+<<<<<<< HEAD
+	// onChange= e=> {
+	// 	this.setState({[e.target.name] : e.target.value});
+	// }
+=======
 class Productpage extends React.Component {
 	state = {
 		value: "XS",
 		value2: "color1"
 	};
-
 	onChange= e=> {
 		this.setState({[e.target.name] : e.target.value});
 	}
+>>>>>>> parent of 3e9b2ef (fixed productpage)
 		//     this.onChangeValue = this.onChangeValue.bind(this);
 		//   }
 
-render() {
-	const [colors, setColors] = useState("color 1");
-	const [sizes, setSizes] = useState("small");
+		export default function() {
+			const [colors, setColors] = useState("color 1");
+			const [sizes, setSizes] = useState("small");
+// render() {
+	// const [colors, setColors] = useState("color 1");
+	// const [sizes, setSizes] = useState("small");
   
 	const { productImage, img1, img2, img3, price, productName, productItem, productDesc } = this.props;
 	return (
@@ -68,10 +81,9 @@ render() {
 				</strong>
 				<p className="product-item">{productItem}</p>
 
-
-
 				<h2 className="size-choice">SIZE</h2>
 
+<<<<<<< HEAD
 	<div className="sizebutton-style">
 	<input
           onChange={(e) => setSizes(e.target.value)}
@@ -134,7 +146,7 @@ render() {
 				<h2 className="color-choice">COLOR</h2>
 				
 				<div className="colorbutton-style">
-				<input
+					<input
           onChange={(e) => setColors(e.target.value)}
           className="hidden_radio"
           type="radio"
@@ -163,7 +175,86 @@ render() {
           color 2
         </label>
       </div>
-    </div>
+    
+=======
+				{/* <div onChange={this.onChangeValue}>  */}
+				<label>XS 
+					<input 
+					className="size-style" 
+					type="radio" 
+					value="XS" 
+					name="value"
+					checked={value === "XS"}
+					onChange={this.onChange} 
+					/> 
+					</label>
+				<label>S
+					<input 
+					className="size-style" 
+					type="radio" 
+					value="S" 
+					name="value"
+					checked={value === "S"}
+					onChange={this.onChange} 
+					/>
+					</label>
+				<label>M
+					<input 
+					className="size-style" 
+					type="radio" 
+					value="M" 
+					name="value"
+					checked={value === "M"}
+					onChange={this.onChange} 
+					/>
+				</label>
+				<label>L
+					<input 
+					className="size-style"
+					type="radio"
+					value="L" 
+					name="value"
+					checked={value === "L"}
+					onChange={this.onChange} 
+					/> 
+					</label>
+
+
+				<h2 className="color-choice">COLOR</h2>
+				<label>color1
+					<input 
+					className="color-style" 
+					type="radio" 
+					value="color1" 
+					name="value2"
+					checked={value2 === "color1"}
+					onChange={this.onChange} 
+					/>
+					</label>
+
+					<label>color2
+					<input 
+					className="color-style" 
+					type="radio" 
+					value="color2" 
+					name="value2"
+					checked={value2 === "color2"}
+					onChange={this.onChange} 
+					/>
+					</label>
+
+					<label>color3
+					<input 
+					className="color-style" 
+					type="radio" 
+					value="color3" 
+					name="value2"
+					checked={value2 === "color3"}
+					onChange={this.onChange} 
+					/>
+					</label>
+
+>>>>>>> parent of 3e9b2ef (fixed productpage)
 				<h2 className="price-choice">PRICE</h2>
 				<p className="product-price">{price}</p>
 
