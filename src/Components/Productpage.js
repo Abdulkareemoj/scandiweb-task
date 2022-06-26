@@ -33,9 +33,7 @@ const DATA = [
 		//     this.onChangeValue = this.onChangeValue.bind(this);
 		//   }
 
-		export default function() {
-			const [colors, setColors] = useState("color 1");
-			const [sizes, setSizes] = useState("small");
+		
 // render() {
 	// const [colors, setColors] = useState("color 1");
 	// const [sizes, setSizes] = useState("small");
