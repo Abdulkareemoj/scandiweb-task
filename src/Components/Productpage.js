@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const DATA = [
 	{
@@ -41,7 +41,7 @@ const DATA = [
 	const { productImage, img1, img2, img3, price, productName, productItem, productDesc } = this.props;
 	
 
-class App extends Component {
+class Productpage extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -51,6 +51,35 @@ class App extends Component {
   }
   render() {
     return (
+      <div className="page-container  container containerpall">
+			<div className="product-thumbnail">
+				<img
+					src={img1}
+					className="product-thumbnail"
+					alt={`${productName}`}
+				/>
+				<img
+					src={img2}
+					className="product-thumbnail"
+					alt={`${productName}`}
+				/>
+				<img
+					src={img3}
+					className="product-thumbnail"
+					alt={`${productName}`}
+				/>
+			</div>
+			<div className="product-image">
+				<img src={productImage} alt={`${productName}`} />
+			</div>
+			<div className="product-details">
+				<strong>
+					{" "}
+					<p className="product-name"> {productName}</p>
+				</strong>
+				<p className="product-item">{productItem}</p>
+
+
       <div>
         <h2 className="size-choice">SIZE</h2>
         <div className="sizebutton-style">
@@ -156,9 +185,15 @@ class App extends Component {
             color 2
           </label>
         </div>
-      </div>
-    );
-  }
-}
+        <h2 className="price-choice">PRICE</h2>
+				<p className="product-price">{price}</p>
 
-export default App;
+				<input className="cta-button" type="button" value="ADD TO CART" name="ADD" />
+				 </div>{" "}
+			<p className="product-desc">{productDesc}</p>
+		</div>
+    </div>
+	);
+				}
+			}
+export default Productpage;
