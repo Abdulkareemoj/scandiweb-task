@@ -28,6 +28,15 @@ const DATA = [
  
 
 class Productpage extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+          colors: "color 1",
+          sizes: "small"
+        };
+      }
+      render() {
+        return (
     <div>
     <h2 className="size-choice">SIZE</h2>
     <div className="sizebutton-style">
@@ -133,12 +142,9 @@ class Productpage extends React.Component {
         color 2
       </label>
     </div>
-            <h2 className="price-choice">PRICE</h2>
-            <p className="product-price">{price}</p>
-
-            <input className="cta-button" type="button" value="ADD TO CART" name="ADD" /> 
-            </div>
-      
+    </div>
+   
+           
 		);
 	}
 }
