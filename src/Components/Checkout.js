@@ -28,103 +28,111 @@ const DATA = [
  
 
 class Productpage extends React.Component {
-    state = {
-		value: "XS",
-		value2: "color1"
-	};
-	onChange= e=> {
-		this.setState({value :e.target.value});
-	}
-	render() {
-		const { productImage, img1, img2, img3, price, productName,productItem,productDesc } = this.props;
-		return (
-            <div className="product-details">
-            <strong>
-                {" "}
-                <p className="product-name"> {productName}</p>
-            </strong>
-            <p className="product-item">{productItem}</p>
+    <div>
+    <h2 className="size-choice">SIZE</h2>
+    <div className="sizebutton-style">
+      <input
+        onChange={(e) => this.setState({ sizes: e.target.value })}
+        className="hidden_radio"
+        type="radio"
+        id="small"
+        name="colors"
+        value="small"
+      />
+      <label
+        className={`${
+          this.state.sizes === "small" ? "button-selected" : "button"
+        }`}
+        for="small"
+      >
+        small
+      </label>
+      <input
+        onChange={(e) => this.setState({ sizes: e.target.value })}
+        className="hidden_radio"
+        type="radio"
+        id="medium"
+        name="colors"
+        value="medium"
+      />
+      <label
+        className={`${
+          this.state.sizes === "medium" ? "button-selected" : "button"
+        }`}
+        for="medium"
+      >
+        medium
+      </label>
+      <input
+        onChange={(e) => this.setState({ sizes: e.target.value })}
+        className="hidden_radio"
+        type="radio"
+        id="large"
+        name="colors"
+        value="large"
+      />
+      <label
+        className={`${
+          this.state.sizes === "large" ? "button-selected" : "button"
+        }`}
+        for="large"
+      >
+        large
+      </label>
+      <input
+        onChange={(e) => this.setState({ sizes: e.target.value })}
+        className="hidden_radio"
+        type="radio"
+        id="xlarge"
+        name="colors"
+        value="xlarge"
+      />
+      <label
+        className={`${
+          this.state.sizes === "xlarge" ? "button-selected" : "button"
+        }`}
+        for="xlarge"
+      >
+        xlarge
+      </label>
+    </div>
 
-            <h2 className="size-choice">SIZE</h2>
+    <h2 className="color-choice">COLOR</h2>
 
-            {/* <div onChange={this.onChangeValue}>  */}
-            <label>XS 
-                <input 
-                className="size-style" 
-                type="radio" 
-                value="XS" 
-                checked={value === "XS"}
-                onChange={this.onChange} 
-                /> 
-                </label>
-            <label>S
-                <input 
-                className="size-style" 
-                type="radio" 
-                value="S" 
-                checked={value === "S"}
-                onChange={this.onChange} 
-                />
-                </label>
-            <label>M
-                <input 
-                className="size-style" 
-                type="radio" 
-                value="M" 
-                checked={value === "M"}
-                onChange={this.onChange} 
-                />
-            </label>
-            <label>L
-                <input 
-                className="size-style"
-                type="radio"
-                value="L" 
-                checked={value === "L"}
-                onChange={this.onChange} 
-                /> 
-                </label>
-
-
-           
-					{/* <div onChange={this.onChangeValue}>  */}
-					<input className="size-style" type="radio" value="XS" name="size" /> XS
-					<input className="size-style"  type="radio" value="S" name="size" /> S
-					<input className="size-style" type="radio" value="M" name="size" /> M
-					<input className="size-style" type="radio" value="L" name="size" /> L
-				
-
-<h2 className="color-choice">COLOR</h2>
-            <label>color1
-                <input 
-                className="color-style" 
-                type="radio" 
-                value="color1" 
-                checked={value2 === "color1"}
-                onChange={this.onChange} 
-                />
-                </label>
-
-                <label>color2
-                <input 
-                className="color-style" 
-                type="radio" 
-                value="color2" 
-                checked={value2 === "color2"}
-                onChange={this.onChange} 
-                />
-                </label>
-
-                <label>color3
-                <input 
-                className="color-style" 
-                type="radio" 
-                value="color3" 
-                checked={value2 === "color3"}
-                onChange={this.onChange} 
-                />
-                </label>
-
+    <div className="colorbutton-style">
+      <input
+        onChange={(e) => this.setState({ colors: e.target.value })}
+        className="hidden_radio"
+        type="radio"
+        id="color1"
+        name="colors"
+        value="color 1"
+      />
+      <label
+        className={`${
+          this.state.colors === "color 1" ? "button-selected" : "button"
+        }`}
+        for="color1"
+      >
+        color 1
+      </label>
+      <input
+        onChange={(e) => this.setState({ colors: e.target.value })}
+        className="hidden_radio"
+        type="radio"
+        id="color2"
+        name="colors"
+        value="color 2"
+      />
+      <label
+        className={`${
+          this.state.colors === "color 2" ? "button-selected" : "button"
+        }`}
+        for="color2"
+      >
+        color 2
+      </label>
+    </div>
             <h2 className="price-choice">PRICE</h2>
             <p className="product-price">{price}</p>
 
