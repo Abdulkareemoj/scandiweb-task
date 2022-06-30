@@ -1,5 +1,4 @@
 import React from "react";
-import Productpage from "./Productpage";
 const DATA = [
 	{
 		img1: "link1",
